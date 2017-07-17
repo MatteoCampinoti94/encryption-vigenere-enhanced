@@ -22,4 +22,4 @@ File needs to exist already.
 
 Option can either be `encrypt` or `decrypt`
 
-Once asked the jey simply type and then press enter. There is no comfirmation.
+Once asked the key simply type and then press enter. There is no comfirmation.
