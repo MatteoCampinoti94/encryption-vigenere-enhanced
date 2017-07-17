@@ -24,7 +24,7 @@ int main (int argc, char* argv[])
     double size=file_size(argv[1]);
     size_calc(size);
 
-    prinf("Encrypting: ");
+    printf("Encrypting: ");
     code(file, size, key, 1);
   }
   else if (op=="decrypt")
@@ -35,7 +35,7 @@ int main (int argc, char* argv[])
     double size=file_size(argv[1]);
     size_calc(size);
 
-    prinf("Decrypting: ");
+    printf("Decrypting: ");
     code(file, size, key, -1);
   }
 
