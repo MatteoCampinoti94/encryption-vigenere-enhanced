@@ -20,6 +20,6 @@ g++ main.cpp cypher.cpp -std=c++11
 
 File needs to exist already.
 
-Option can either be `encrypt` or `decrypt`
+Option can either be `encrypt` (short `e`) or `decrypt` (short `d`)
 
 Once asked the key simply type and then press enter. There is no comfirmation.
