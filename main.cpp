@@ -16,7 +16,7 @@ int main (int argc, char* argv[])
 
   std::string op=argv[2];
 
-  if (op=="encrypt")
+  if (op=="encrypt" || op=="e")
   {
     std::fstream file(argv[1], std::ios::in | std::ios::out);
     std::string key=get_key();
@@ -27,7 +27,7 @@ int main (int argc, char* argv[])
     printf("Encrypting: ");
     code(file, size, key, 1);
   }
-  else if (op=="decrypt")
+  else if (op=="decrypt" || op=="d")
   {
     std::fstream file(argv[1], std::ios::in | std::ios::out);
     std::string key=get_key();
