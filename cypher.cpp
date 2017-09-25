@@ -9,11 +9,10 @@ int key_val(const std::string& key, const int& pos)
 void code (std::fstream& file, const double& size, const std::string& key, const int& coding)
 {
   char c;
-  double cmpl=size/10;
 
   for (int i=0; file.get(c); i++)
   {
-    if ((i+1)>=cmpl) { printf("*"); cmpl+=size/10; }
+    printf("\rCompletion: %.0f%%", (i/size)*100 );
 
     c+=coding*key_val(key, i);
 
