@@ -21,5 +21,5 @@ void code (std::fstream& file, const double& size, const std::string& key, const
 
     file.put(c);
   }
-  printf("\n");
+  printf("\rCompletion: 100.00%%\n");
 }
