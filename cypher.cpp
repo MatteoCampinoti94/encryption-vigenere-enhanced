@@ -9,6 +9,7 @@ int key_val(const std::string& key, const int& pos)
 void code (std::fstream& file, const double& size, const std::string& key, const int& coding)
 {
   char c;
+  setbuf(stdout, NULL);
 
   for (int i=0; file.get(c); i++)
   {
